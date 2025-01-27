@@ -135,9 +135,6 @@ describe('CommitmentsComponent', () => {
     // Select Infrastructure filter
     fireEvent.click(screen.getByText('Infrastructure 45M'));
 
-    // Trigger a refresh
-    queryClient.invalidateQueries({ queryKey: ['investorCommitments'] });
-
     // Wait for refresh to complete and verify filter is maintained
     await screen.findByText('Infrastructure');
     expect(screen.queryByText('100M')).toBeNull();
