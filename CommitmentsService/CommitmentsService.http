@@ -1,0 +1,5 @@
+@CommitmentsService_HostAddress = https://localhost:7266
+
+GET {{CommitmentsService_HostAddress}}/commitments/summaries/
+Accept: application/json
+###

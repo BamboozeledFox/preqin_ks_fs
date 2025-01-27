@@ -1,0 +1,27 @@
+.root {
+    position: relative;
+    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-8));
+    width: fit-content;
+    border-radius: var(--mantine-radius-md);
+    padding: 5px;
+    border: 1px solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-4));
+}
+
+.control {
+    padding: 7px 12px;
+    line-height: 1;
+    color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-2));
+    border-radius: var(--mantine-radius-md);
+    font-size: var(--mantine-font-size-sm);
+    transition: color 100ms ease;
+    font-weight: 500;
+
+    &[data-active] {
+        color: var(--mantine-primary-color-filled);
+    }
+}
+
+.controlLabel {
+    position: relative;
+    z-index: 1;
+}
